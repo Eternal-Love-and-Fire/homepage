@@ -44,7 +44,7 @@ body {
 
 .resume__block {
   border-bottom: 3px solid var(--border-color);
-  padding-bottom: 5px;
+  padding-bottom: 30px;
   margin-bottom: 15px;
 }
 
@@ -245,50 +245,16 @@ body {
 }
 
 .additional-info__languages {
-  margin-top: 32px;
   margin-bottom: 20px;
 }
 
 .additional-info__languages-header {
   color: var(--secondary-text-color);
   text-align: left;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 .additional-info__languages-item {
   color: var(--secondary-text-color);
 }
-.w-8 {
-  width: 32px;
-}
-.h-8 {
-  height: 32px;
-}
-.mb-4 {
-  margin-bottom: 16px;
-}
 
-._contact {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-._contact .custom-header__contacts{
-  margin-top: 15px;
-  display: flex;
-  flex-direction:row;
-  align-items: flex-start;
-  gap: 1.5rem;
-}
-._contact a {
-  min-width:70px ;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-@media screen and (max-width: 576px) {
-  ._contact .custom-header__contacts {
-    align-items: flex-start;
-    flex-direction: column;
-  }
-}
