@@ -245,16 +245,19 @@ body {
 }
 
 .additional-info__languages {
+  margin-top: 32px;
   margin-bottom: 20px;
 }
 
 .additional-info__languages-header {
   color: var(--secondary-text-color);
   text-align: left;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .additional-info__languages-item {
   color: var(--secondary-text-color);
 }
-
+.mb-4 {
+  margin-bottom: 16px;
+}
