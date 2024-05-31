@@ -309,3 +309,12 @@ body {
     box-shadow: 0 0 0 0 var(--border-color);
   }
 }
+.hover {
+  border-bottom: 2px solid transparent;
+  opacity: 0.65;
+  transition: all 0.3s;
+}
+.hover:hover {
+  border-bottom: 2px solid black;
+  opacity: 1;
+}
