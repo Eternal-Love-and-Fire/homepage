@@ -1,36 +1,21 @@
+import { palettes } from "./colors.js";
+
 const coords = { x: 0, y: 0 };
 const circles = document.querySelectorAll(".circle");
 
-const colors = [
-  "#000000",
-  "#0d0000",
-  "#1a0000",
-  "#260000",
-  "#330000",
-  "#400000",
-  "#4d0000",
-  "#590000",
-  "#660000",
-  "#730000",
-  "#800000",
-  "#8c0000",
-  "#990000",
-  "#a60000",
-  "#b30000",
-  "#bf0000",
-  "#cc0000",
-  "#d90000",
-  "#e60000",
-  "#f20000",
-  "#ff0000",
-  "#000000",
-];
+function setCircleColors() {
+  const colors = palettes[Math.floor(Math.random() * palettes.length)];
 
-circles.forEach(function (circle, index) {
-  circle.x = 0;
-  circle.y = 0;
-  circle.style.backgroundColor = colors[index % colors.length];
-});
+  circles.forEach(function (circle, index) {
+    circle.x = 0;
+    circle.y = 0;
+    circle.style.backgroundColor = colors[index % colors.length];
+  });
+}
+
+setCircleColors();
+
+document.documentElement.addEventListener("click", setCircleColors);
 
 window.addEventListener("mousemove", function (e) {
   coords.x = e.clientX;
