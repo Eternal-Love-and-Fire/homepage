@@ -7,7 +7,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.5;
-
   --primary-text-color: #181820;
   --secondary-text-color: #5c5c62;
   --durability-text-color: #6a737d9c;
@@ -317,4 +316,15 @@ body {
 .hover:hover {
   border-bottom: 2px solid black;
   opacity: 1;
+}
+.circle {
+  height: 24px;
+  width: 24px;
+  border-radius: 24px;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 99999999;
 }
